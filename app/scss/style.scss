@@ -199,7 +199,7 @@
   top: 0;
   bottom: 0;
   max-width: 694px;
-  width: 100%;
+  width: 100%; //1
   background-color: #fff;
   padding-top: 40px;
   box-shadow: -2px 3px 17px 0px #000;
@@ -234,6 +234,20 @@
     @extend %title-font;
     font-size: 36px;
     line-height: 51px;
+    position: relative;
+    margin-bottom: 17px;
+    padding-bottom: 17px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 252px;
+      margin: 0 auto;
+      height: 1px;
+      background: #6D7278;
+    }
   }
 
   &__text {
@@ -245,6 +259,8 @@
   }
 }
 
-
+.top {
+  
+}
 
 
