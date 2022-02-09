@@ -237,7 +237,6 @@
     position: relative;
     margin-bottom: 17px;
     padding-bottom: 17px;  
-
     &::after {
       content: '';
       position: absolute;
@@ -302,7 +301,6 @@
     margin-bottom: 26px;
     position: relative;
     @extend %title-font;
-
     &::after {
       content: '';
       position: absolute;
@@ -331,7 +329,6 @@
     margin-bottom: 25px;
     position: relative;
     @extend %title-font;
-
     &::after {
       content: '';
       position: absolute;
@@ -358,7 +355,6 @@
 
   &__item {
     position: relative;
-
     &:hover {
       .collection__info {
         opacity: 1;
@@ -395,7 +391,6 @@
     margin-bottom: 19px;
     position: relative;
     @extend %title-font;
-    
     &::after {
       content: '';
       bottom: 0;
@@ -431,7 +426,6 @@
     margin-bottom: 22px;
     position: relative;
     @extend %title-font;
-
     &::after {
       content: '';
       position: absolute;
@@ -462,7 +456,19 @@
 
   &__items-box {
     display: flex;
+    align-items: flex-end;
     border-bottom: 2px solid rgba($title, .7);
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $title;
+    }
   }
 
   &__item {
@@ -470,6 +476,40 @@
     display: flex;
     flex-wrap: wrap;;
     align-items: center;
+    position: relative;
+    height: 100%;
+  }
+
+  &__item--production {
+    margin-left: 317px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 20px;
+      width: 2px;
+      background: rgba($title, .7);
+    }
+  }
+
+  &__item--production,
+  &__item--consultation {
+    padding-bottom: 38px;
+  }
+
+  &__item--measuring {
+    padding-top: 38px;
+    margin-left: 305px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 2px;
+      background: rgba($title, .7);
+    }
   }
 
   &__item-title {
