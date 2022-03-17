@@ -1164,4 +1164,18 @@
   &__arrow {
     margin: 0 6px;
   }
+
+  &__arrow--disabled {
+    display: none;
+  }
+
+  &__list-num {
+    font-weight: 600;
+    font-size: 14px;
+    color: #707070;
+  }
+
+  &__list-num--active {
+    color: $title;
+  }
 }
