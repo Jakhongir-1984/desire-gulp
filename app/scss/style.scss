@@ -1166,7 +1166,8 @@
   }
 
   &__arrow--disabled {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
   }
 
   &__list-num {
@@ -1178,4 +1179,8 @@
   &__list-num--active {
     color: $title;
   }
+}
+
+.blog-one__item {
+  
 }
