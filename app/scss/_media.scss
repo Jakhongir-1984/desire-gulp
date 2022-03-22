@@ -127,6 +127,16 @@
       margin-left: 100px;
     }
   }
+
+  .gallery {
+    &__buttons {
+      display: grid;
+    }
+
+    &__btn {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 @media (max-width: 650px) {
@@ -174,6 +184,24 @@
       width: 100%;
     }
   }
+
+  .blog-box {
+    &__items {
+      display: block;
+    }
+
+    &__img-link {
+      display: block;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media (max-width: 540px) {
@@ -206,22 +234,6 @@
         margin: 6px 0;
       }
     }  
-
-    .collection {
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-    %title-font {
-      font-size: 28px;
-      line-height: 36px;
-    }
-
-    .works-path {
-      &__item-title {
-        font-size: 16px;
-        line-height: 27px;
-      }
-    }
   }
 
   .menu {
@@ -249,6 +261,40 @@
     &__list-link {
       display: block;
       padding: 15px 0;
+    }
+  }
+
+  .collection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  %title-font {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .blog-box {
+    &__item-title {
+      font-size: 22px;
+      line-height: 36px;
+    }
+  }
+
+  .works-path {
+    &__item-title {
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+  .gallery {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__item:first-child {
+      grid-column: 1;
+      grid-row: 1;
     }
   }
 }
